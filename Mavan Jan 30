@@ -1,0 +1,24 @@
+Maven
+
+Maven Installation
+
+Build the project using Maven
+
+curl -LO http://mirrors.estointernet.in/apache/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.tar.gz
+ls
+tar -xzvf apache-maven-3.6.0-bin.tar.gz
+export MAVEN_HOME=$HOME/apache-maven-3.6.0
+export MAVEN=$MAVEN_HOME/bin
+export PATH=$PATH:$MAVEN
+
+sudo yum install java-1.8.0-openjdk-devel wget
+mvn --version
+
+cd simple-java-maven-app/
+mvn package
+
+java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App
+mvn clean dependency:copy-dependencies package
+
+
+
