@@ -1,0 +1,29 @@
+JENKINS
+
+sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+
+sudo yum install jenkins
+sudo systemctl start jenkins.service
+sudo systemctl status jenkins.service
+
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+curl ident.me
+
+cd /usr/lib/jvm
+cd java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
+
+Get the path for Jenkins Configuration
+pwd
+
+Build Step:
+mvn clean install
+
+Goals and options:
+clean install
+
+Post Build Actions:
+target/*.jar
+
+
+
