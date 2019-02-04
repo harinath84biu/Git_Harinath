@@ -1,0 +1,62 @@
+GIT
+
+a. Local Repository
+b. Remore Repository
+
+
+1. GIT Installation
+
+git (to check if git installed)
+
+sudo yum install git
+
+sudo update (Optional)
+
+git config --global user.name "Harinath Chandrasekaran"
+git config --global user.email "emailharinath@gmail.com"
+git config --global color.branch auto
+git config --global color.diff auto
+git config --global color.status auto
+git config --global color.ui auto
+
+mkdir git-demo
+cd git-demo
+
+echo "# Git_Harinath" >> README.md
+touch git_Hari
+vi git_Hari
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/harinath84biu/Git_Harinath.git
+git push -u origin master
+
+git checkout -b newbranch
+vi sample.txt
+git add .
+git commit -m "sample file update"
+git push origin newbranch
+
+git checkout master
+git pull origin master
+git log
+
+simple-java-maven
+ls -al ~/.ssh/
+
+ssh-keygen -t rsa -b 4096 -C "emailharinath@gmail.com"
+
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa
+
+cat ~/.ssh/id_rsa.pub
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDYwpDgs/02NTWgZe20vQEPLPNB3RrqGq0xocRSk6Eaeu66rKXuO3dXDMYnfj9OFb6bI7toq71VVw/U+i4IN15DpK0iP2b0saYZiXX9bSJYdjbtfXeqtVnxGX03uRTa8/WFXVTj/B+GAPVBqugCUFNa6RSj+dvYX5ADm4CkC8lv0DFLAheyDsFLlXpa5tvGM3AlqcYYGgJVo0YvEDJmfhntiMBCIQU4TxPfvyXT0cfEgd+pjFU6EnfgFjsWCjgDO+nmWqolkTkAyvinSkcZyRkDvGug3S/WgQv7U/PFSYqR592ZOFGL1H8pHjgUEXdR4Gloje7sBhy59FTkZZyJmIFaSAVdkuFiXuqQ8jej1TILW0yHMHe0Nha5B1zQibzzt5OEII1uyAS7cL0z+4ljzELVqaXVWcZCkNdlk3RscGaQqjcOKAERNdFX8HJ8uQJKC4zd5ZjCIIPtJTmfqNQovXoepFAjZZG42yPIvmqaFK3WO5+HwFx2YHdaZQ8mwtXbMXwPRZmt/hJKhH8nzWiNAPH2ugr/h9XzsFI4zDIrCoDCichG1oPuZX6d+2Y/nbpr3XrkcHVN3AMU/qvoF6UOic3lWt03Fop83gKqN9Yyak/DQ/8oyWy8d1ymzW66CdmFwL1Fbqmd8vP+C//zdFIvvMAIeAchklADqZavstI3z22Pkw== emailharinath@gmail.com
+
+ git clone https://github.com/harinath84biu/simple-java-maven-app.git
+
+git status
+git diff
+git add README.md
+git commit
+git push origin master
