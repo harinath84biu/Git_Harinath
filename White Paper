@@ -1,0 +1,59 @@
+1. Mobile Crash Report using CI-CD Pipeline
+
+2. Load testing using CI-CD Pipeline
+
+3. Machine Learning Alert Notifications Using Dev
+
+Project Management Tools : Jile, DevPlus (from TCS MasterCraft), Jira
+Source Code Management: Git
+Peer review: Gerrit
+Build: Apache Maven
+Static Code Analysis SonarQube
+Unit/ Integration Testing: JUnit
+Code coverage: Jacoco
+Artefact Manager/ Repository: Artifactory
+Functional Testing: Selenium
+Performance Testing: Jmeter
+Continuous Integration: Jenkins
+Continuous Delivery and Deployment: GoCD
+Application Deployment Platforms (Virtualization and Containers): Docker
+Infrastructure Automation: Ansible
+Monitoring Tools: Nagios
+Log Monitoring: ELK (Elasticsearch, Logstash, Kibana work together in an open-source stack)
+Collaboration : Slack
+Development / IDE : Eclipse
+IT Service Management : JIRA Service Desk (Atlassian)
+Release Management: Jenkins
+Security/Security testing Tools: Fortify WebInspect
+Cloud/Iaas/ Paas: AWS
+
+IDE for Java: Eclipse, STS (plugins for git, svn, SonarLint and Maven)
+IDE for UI and JavaScript: Visual Code (With Angular CLI, SaSS, TypeScript and ESLint)
+
+34.217.29.143
+
+https://devops.com/category/blogs/
+
+https://www.techrepublic.com/article/10-critical-skills-that-every-devops-engineer-needs-for-success/
+
+https://dzone.com/refcardz/securing-mobile-applications-with-cert-pinning?chapter=7
+Securing Mobile Applications With Cert Pinning
+
+https://dzone.com/articles/essential-devops-skills-1
+https://dzone.com/articles/essential-devops-skills-part-ii
+
+
+sonarqube: 
+8d8261dfdc8412f849d39ffbb433ca980f1bd5ad
+
+mvn sonar:sonar \
+  -Dsonar.host.url=http://34.217.29.143:9000 \
+  -Dsonar.login=8d8261dfdc8412f849d39ffbb433ca980f1bd5ad
+
+https://devops.com/applying-devsecops-to-address-cloud-security-challenges/
+
+Containers Vs Virtualization
+Docker
+Dockerfile
+Images
+Dockerized CI-CD
