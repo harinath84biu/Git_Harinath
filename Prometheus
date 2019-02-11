@@ -1,0 +1,12 @@
+50.112.47.145
+
+vi /etc/selinux/config
+setenforce 0
+sudo systemctl start docker
+docker info
+
+sudo docker run --name prometheus1 -d -p 9090:9090 prom/prometheus
+docker ps -a
+curl ident.me
+
+https://www.kdnuggets.com/2018/02/applying-machine-learning-devops.html
